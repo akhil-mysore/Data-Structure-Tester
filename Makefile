@@ -1,10 +1,10 @@
 CC=gcc
 CFLAGS=-I.
-DEPS = dst.h 
-OBJ = app.c
+DEPS = dst_lib.h 
+OBJ = app.c dst_lib.c
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-testhash : $(OBJ)
+dst : $(OBJ)
 	gcc -o $@ $^ $(CFLAGS)
