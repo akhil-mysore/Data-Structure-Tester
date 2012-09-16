@@ -5,7 +5,7 @@ A library which can be used by any app to test the data structure's functionalit
 
 Any app which wants to test its (any) data structure's performance/functionality, can use this library.
 
-1. DST spans a thread for user interface.
+1. DST spawns a thread for user interface.
 
 2. The UI thread will wait for user inputs (text, like bash) and communicates with the parent thread 
   passing on requests from the user. Syntax is not decided but it can say something like, "start load
